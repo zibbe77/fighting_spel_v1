@@ -1,12 +1,11 @@
 ﻿using System;
-Random generator = new Random();
-int r = generator.Next(0, 10);
-int kämpe = 0;
 
-System.Console.WriteLine("Välj din kämpe. Alltnaiv A Joe Bidon. Alltnativ B Karen");
+string[] kampe = new string[2];
 
-kämpe = Toolbox.kämpe();
+kampe = Toolbox.vika();
 
-if (kämpe == 1) { System.Console.WriteLine("Joe Bidon"); }
-if (kämpe == 2) { System.Console.WriteLine("Karen"); }
+System.Console.WriteLine($"{kampe[0]} och {kampe[1]} är redo");
 Console.ReadLine();
+
+Toolbox.slags(kampe);
+
